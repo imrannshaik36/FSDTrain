@@ -2,17 +2,87 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head><body>
-    <h1>GIT</h1>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-    <input type="submit" value="Submit">    
+    <title>Product Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 350px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        /* button:hover {
+            background-color: #0056b3;
+        } */
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="product-title">Premium Wireless Headphones</h1>
+        <p id="product-desc">Experience immersive sound</p>
+        <button id="action-btn">Buy Now</button>
+    </div>
+
+    <script>
+        // Modern JavaScript Class using Arrow Functions to completely avoid the ".bind() undefined" error
+        class LandingPage {
+            constructor() {
+                this.button = document.getElementById('action-btn');
+                this.title = document.getElementById('product-title');
+                
+                this.init();
+            }
+
+            init() {
+                // Attach event listener safely
+                this.button.addEventListener('click', this.handleButtonClick);
+            }
+
+            // Using an arrow function automatically binds 'this' context perfectly
+            handleButtonClick = () => {
+                alert(`Thank you for your interest in the "${this.title.textContent}"!`);
+                this.button.textContent = "Added to Cart! ✅";
+                this.button.style.backgroundColor = "#28a745";
+            }
+        }
+
+        // Initialize the page logic once the DOM is ready
+        document.addEventListener('DOMContentLoaded', () => {
+            new LandingPage();
+        });
+    </script>
+
 </body>
 </html>
