@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - TechTrain Academy</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero-banner {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://picsum.photos/id/180/1200/500');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR COMPONENT -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><strong>TechTrain Academy</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#courseNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="courseNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero-banner text-white text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">TechTrain Institute</h1>
+            <p class="lead fs-3 text-warning">Up-Skill Your Career with Industry Experts</p>
+            <p class="mx-auto" style="max-width: 600px;">We offer specialized, hands-on professional training paths designed to help you land your dream tech role.</p>
+            <a href="courses.html" class="btn btn-warning btn-lg mt-3 fw-bold">Explore Courses</a>
+        </div>
+    </div>
+
+    <!-- FEATURED COURSES SECTION (6 CARDS IN GRID) -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4 fw-bold">Our Featured Programs</h2>
+        <div class="row g-4">
+            <!-- Course 1 - WEB DEVELOPMENT (FIXED IMAGE) -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Web Development" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Web Development</h5>
+                        <p class="card-text text-muted">Learn HTML, CSS, JavaScript, and React from scratch.</p>
+                        <p class="mb-1"><strong>Duration:</strong> 12 Weeks</p>
+                        <p><strong>Fee:</strong> $499</p>
+                        <a href="register.html" class="btn btn-outline-primary w-100">View Details & Register</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 2 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/id/60/400/250" class="card-img-top" alt="Python" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Python Programming</h5>
+                        <p class="card-text text-muted">Master logic building, scripting, and backend automation basics.</p>
+                        <p class="mb-1"><strong>Duration:</strong> 8 Weeks</p>
+                        <p><strong>Fee:</strong> $349</p>
+                        <a href="register.html" class="btn btn-outline-primary w-100">View Details & Register</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 3 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/id/96/400/250" class="card-img-top" alt="Data Science" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Data Science</h5>
+                        <p class="card-text text-muted">Analyze massive datasets using Pandas, NumPy, and visualization libraries.</p>
+                        <p class="mb-1"><strong>Duration:</strong> 16 Weeks</p>
+                        <p><strong>Fee:</strong> $599</p>
+                        <a href="register.html" class="btn btn-outline-primary w-100">View Details & Register</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 4 - AI & MACHINE LEARNING (FIXED IMAGE) -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="AI & ML" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">AI & Machine Learning</h5>
+                        <p class="card-text text-muted">Build predictive intelligence architectures and complex model sets.</p>
+                        <p class="mb-1"><strong>Duration:</strong> 20 Weeks</p>
+                        <p><strong>Fee:</strong> $749</p>
+                        <a href="register.html" class="btn btn-outline-primary w-100">View Details & Register</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 5 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <!-- What you have: -->
+                    <img src="https://images.pexels.com/photos/1517694/pexels-photo-1517694.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Java" style="height: 220px; object-fit: cover;" onerror="this.src='https://picsum.photos/id/1/400/250'">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Java Programming</h5>
+                        <p class="card-text text-muted">Dive deep into Object-Oriented Principles and Enterprise applications.</p>
+                        <p class="mb-1"><strong>Duration:</strong> 10 Weeks</p>
+                        <p><strong>Fee:</strong> $399</p>
+                        <a href="register.html" class="btn btn-outline-primary w-100">View Details & Register</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 6 -->
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=400" class="card-img-top" alt="Cloud" style="height: 220px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Cloud Computing</h5>
+                        <p class="card-text text-muted">Deploy scalable software applications safely onto AWS and Azure platforms.</p>
+                        <p class="mb-1"><strong>Duration:</strong> 12 Weeks</p>
+                        <p><strong>Fee:</strong> $499</p>
+                        <a href="register.html" class="btn btn-outline-primary w-100">View Details & Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TESTIMONIALS SECTION -->
+    <div class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">What Our Alumni Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 shadow-sm text-center">
+                        <p class="fst-italic">"The Web Development curriculum was so direct and practical. I got placed as a frontend engineer right after completing the course!"</p>
+                        <h6 class="fw-bold text-primary">- Sarah Jenkins</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 shadow-sm text-center">
+                        <p class="fst-italic">"Learning Python and Data Science here changed my entire perspective. The instructors are amazing and break down every problem step by step."</p>
+                        <h6 class="fw-bold text-primary">- Michael Chang</h6>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3 border-0 shadow-sm text-center">
+                        <p class="fst-italic">"Cloud Computing setups were perfectly explained through real deployment assignments. I highly recommend TechTrain."</p>
+                        <h6 class="fw-bold text-primary">- David Miller</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER COMPONENT -->
+    <footer class="bg-dark text-white pt-4 pb-2 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-6 mb-3">
+                    <h5>Our Training Location</h5>
+                    <p class="mb-1">102 Innovation Way, Tech District, Suite 500</p>
+                    <p class="mb-1">Phone: +1 (555) 019-8834</p>
+                    <p>Email: info@techtrainacademy.com</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mb-3">
+                    <h5>Follow Our Community</h5>
+                    <a href="#" class="text-white mx-2">Facebook</a> | 
+                    <a href="#" class="text-white mx-2">Twitter</a> | 
+                    <a href="#" class="text-white mx-2">LinkedIn</a>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <p class="text-center small text-muted">&copy; 2026 TechTrain Institute Management. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL COMPONENT -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Student Login Portal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Email Address</label>
+                            <input type="email" class="form-control" placeholder="Enter registration email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password">
+                        </div>
+                        <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
